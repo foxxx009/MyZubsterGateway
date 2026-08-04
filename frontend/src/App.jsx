@@ -3,6 +3,8 @@ import { AuthProvider, useAuth } from './contexts/AuthContext';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import ForgotPassword from './pages/ForgotPassword';
+import TwoFactorSetup from './pages/TwoFactorSetup';
 import Dashboard from './pages/Dashboard';
 import Skills from './pages/Skills';
 import Offers from './pages/Offers';
@@ -28,6 +30,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/2fa-setup" element={<TwoFactorSetup />} />
           <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/offers" element={<Offers />} />
